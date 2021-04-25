@@ -5,12 +5,15 @@ const downloadBtn = document.getElementById('download-btn');
 
 const image = new Image();
 image.src = 'angular.png';
+// image.style.width = canvas.width;
+// image.style.height = canvas.height;
 image.onload = function () {
 	drawImage();
 };
 
-function WDclose(){
-    window.close();
+function Wopen(){
+	window.close();
+    window.open("https://edukit.netlify.app/");
 }
 
 function drawImage() {
